@@ -5,37 +5,37 @@
 
 #define SENHA 1234 //constante
 
-/*Escreva um programa em C que simule um sistema de caixa eletrônico.
-Implemente as seguintes funções:
+/*Escreva um programa em C que simule um sistema de caixa eletrÃ´nico.
+Implemente as seguintes funÃ§Ãµes:
 -Acessar a conta. 
--Verificação de senha: 3 tentativas bloqueiam o cartão e finaliza a aplicação.
+-VerificaÃ§Ã£o de senha: 3 tentativas bloqueiam o cartÃ£o e finaliza a aplicaÃ§Ã£o.
 -Verificar saldo.*/
 
 int main (){
-	setlocale(LC_ALL, "Portuguese");      PALAVRA-CHAVE: ARRANJOS
+	setlocale(LC_ALL, "Portuguese");      //PALAVRA-CHAVE: ARRANJOS
 	
 	int senha, tent = 3;
 	float saldo = 2.45;
 	bool system = 1;
 	
 	do{
-		printf("Insira senha de 4 dígitos: ");
+		printf("Insira senha de 4 dÃ­gitos: ");
 		sleep(1);
 		scanf("%i", &senha);
 		if (senha == SENHA){
 			while(system == 1){
 				printf("Seu saldo: R$%.2f\n", saldo);
-				printf("Deseja sair do sistema?\n(0)Sim\n(1)Não\n");
+				printf("Deseja sair do sistema?\n(0)Sim\n(1)NÃ£o\n");
 				scanf("%i", &system);	
 			}
 		}else{
 			if(tent == 1){
-				printf("Cartão bloqueado!");
+				printf("CartÃ£o bloqueado!");
 				system = 0;
 				break;
 			}
 			tent--;
-			printf("Senha incorreta. Você tem mais %i tentativas\n", tent);
+			printf("Senha incorreta. VocÃª tem mais %i tentativas\n", tent);
 		}
 	}while(system == 1);
 	printf("\nSistema encerrado.");
