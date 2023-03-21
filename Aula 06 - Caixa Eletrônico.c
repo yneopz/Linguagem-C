@@ -3,16 +3,10 @@
 #include <time.h>
 #include <locale.h>
 
-#define SENHA 1234 //constante
-
-/*Escreva um programa em C que simule um sistema de caixa eletrônico.
-Implemente as seguintes funções:
--Acessar a conta. 
--Verificação de senha: 3 tentativas bloqueiam o cartão e finaliza a aplicação.
--Verificar saldo.*/
+#define SENHA 1234
 
 int main (){
-	setlocale(LC_ALL, "Portuguese");      //PALAVRA-CHAVE: ARRANJOS
+	setlocale(LC_ALL, "Portuguese");  
 	
 	int senha, tent = 3;
 	float saldo = 2.45;
