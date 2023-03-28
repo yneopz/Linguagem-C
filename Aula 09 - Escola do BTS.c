@@ -19,7 +19,7 @@ int main (){
         	printf("Insira nota %i de Yoongi: ", i+1);
 			scanf("%i", &yoongi[i]);
     	}
-    	//Impress„o das notas
+    	//Impress√£o das notas
     	printf("\nNamjoon: ");
     	for(i = 0; i < TAM; i++){
         	printf("%i\t", namjoon[i]);
