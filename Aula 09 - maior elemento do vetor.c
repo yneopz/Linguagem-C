@@ -8,7 +8,7 @@ int main(){
 		if(vet[i] > maior) maior = vet [i];
 	}
 	
-	printf("O maior valor é: %i", maior);
+	printf("O maior valor Ã©: %i", maior);
 	
 	return 0;
 }
